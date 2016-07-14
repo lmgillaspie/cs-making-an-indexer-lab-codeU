@@ -1,3 +1,7 @@
+/**
+ * Edited by Lindsey Gillaspie
+ */
+
 package com.flatironschool.javacs;
 
 import java.io.IOException;
@@ -36,8 +40,12 @@ public class TermCounter {
 	 * @return
 	 */
 	public int size() {
-        // TODO: fill this in.
-		return -1;
+        // Lindsey edited this part to correctly find the total
+		int total = 0;
+		for(Integer value: map.values()) {
+			total += value;
+		}
+		return total;
 	}
 
 	/**
